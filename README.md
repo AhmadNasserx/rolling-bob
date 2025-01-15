@@ -10,3 +10,5 @@ Rolling Bob is a 2D physics-based game inspired by Angry Birds, developed using 
 
 This project demonstrates core 2D game development skills and is a foundation for more advanced projects.
 
+you can play it on my itch page:
+https://ahmadnasser.itch.io/rolling-bob
