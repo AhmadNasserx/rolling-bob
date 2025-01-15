@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgwbsnp7lfvbq"]
+
+[ext_resource type="Texture2D" uid="uid://dh3c32r3id8fh" path="res://assets/env/elementStone025.png" id="1_0380t"]
+[ext_resource type="Script" path="res://Scenes/stone.gd" id="1_kk13t"]
+[ext_resource type="AudioStream" uid="uid://deq4i6anhflwa" path="res://assets/audio/concrete-hit-2-83782.mp3" id="3_gr458"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iryuc"]
+size = Vector2(66, 218)
+
+[node name="stone" type="StaticBody2D"]
+script = ExtResource("1_kk13t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_iryuc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0380t")
+
+[node name="concreateHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gr458")

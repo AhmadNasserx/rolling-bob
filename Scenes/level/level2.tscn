@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnlvucvqm1yrs"]
+
+[ext_resource type="PackedScene" uid="uid://bjfqh3jkgdmbr" path="res://Scenes/level/level.tscn" id="1_140at"]
+[ext_resource type="PackedScene" uid="uid://dbneoo5sqq3c" path="res://Scenes/cup/cup.tscn" id="2_wkagm"]
+[ext_resource type="PackedScene" uid="uid://cgwbsnp7lfvbq" path="res://Scenes/stone.tscn" id="3_ajac8"]
+
+[node name="Level" instance=ExtResource("1_140at")]
+
+[node name="cup" parent="." index="3" instance=ExtResource("2_wkagm")]
+position = Vector2(512, 403)
+
+[node name="cup2" parent="." index="4" instance=ExtResource("2_wkagm")]
+position = Vector2(751, 239)
+
+[node name="cup3" parent="." index="5" instance=ExtResource("2_wkagm")]
+position = Vector2(358, 199)
+
+[node name="stone" parent="." index="8" instance=ExtResource("3_ajac8")]
+position = Vector2(934, 126)
